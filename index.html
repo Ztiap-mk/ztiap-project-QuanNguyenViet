@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mario</title>
+    <style>
+        #myCanvas{
+            border: 1px solid black;
+            background: deepskyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <canvas id="myCanvas" width="900" height="700"></canvas>
+        <img id="player" src="assets/img/player.png" style="display: none">
+        <img id="coins" src="assets/img/coins.png" style="display: none">
+        <img id="star" src="assets/img/star.png" style="display: none">
+        <img id="enemy" src="assets/img/enemy.png" style="display: none">
+        <img id="block" src="assets/img/block.png" style="display: none">
+    </div>
+
+<script src="index.js"></script>
+<script> const game = new Game();
+        game.start().then(() => console.log('hotovo'));
+</script>
+</body>
+</html>
